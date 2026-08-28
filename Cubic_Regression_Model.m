@@ -1,23 +1,3 @@
-%% =========================================================================
-%  CUBIC RESPONSE-SURFACE MODEL USING THREE REPLICATES
-%
-%  Experimental design:
-%  5 temperatures x 7 RH levels x 3 replicates = 105 observations
-%
-%  Model:
-%  WU = b0 + b1*T + b2*Aw + b3*T^2 + b4*Aw^2 + b5*T*Aw
-%       + b6*T^3 + b7*Aw^3 + b8*T^2*Aw + b9*T*Aw^2
-%
-%  This script calculates:
-%  1. Cubic-model coefficients
-%  2. Overall regression ANOVA
-%  3. Hierarchical linear, quadratic, and cubic contributions
-%  4. Coefficient standard errors, t statistics, p-values, and 95% CI
-%  5. Pure error and lack-of-fit analysis
-%  6. Response-surface and diagnostic plots
-%
-%  The code avoids fitlm, anova, fcdf, tcdf, and tinv.
-% =========================================================================
 
 clear;
 clc;
